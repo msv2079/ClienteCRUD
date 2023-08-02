@@ -1,0 +1,6 @@
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\bin\Debug\ClienteCRUDModel.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\bin\Debug\ClienteCRUDModel.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\obj\Debug\ClienteCRUDModel.csproj.AssemblyReference.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\obj\Debug\ClienteCRUDModel.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\obj\Debug\ClienteCRUDModel.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDModel\obj\Debug\ClienteCRUDModel.pdb

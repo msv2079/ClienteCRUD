@@ -1,0 +1,6 @@
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\bin\Debug\ClienteCRUDEntity.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\bin\Debug\ClienteCRUDEntity.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\obj\Debug\ClienteCRUDEntity.csproj.AssemblyReference.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\obj\Debug\ClienteCRUDEntity.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\obj\Debug\ClienteCRUDEntity.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDEntity\obj\Debug\ClienteCRUDEntity.pdb

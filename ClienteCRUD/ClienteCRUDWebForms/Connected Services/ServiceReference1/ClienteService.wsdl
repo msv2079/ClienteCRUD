@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ClienteService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61668/ClienteService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61668/ClienteService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.ServiceModel" />
+      <xsd:import schemaLocation="http://localhost:61668/ClienteService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61668/ClienteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ClienteCRUDModel" />
+      <xsd:import schemaLocation="http://localhost:61668/ClienteService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClienteService_GetAllCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCliente" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_GetAllCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_GetAllCliente_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q1:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_GetCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCliente" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_GetCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_GetCliente_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q2:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_SaveCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCliente" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_SaveCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_SaveCliente_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q3:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_AtualizarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_AtualizarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_AtualizarCliente_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q4:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_DeleteCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCliente" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_DeleteCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteService_DeleteCliente_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q5:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="ISexoService_GetAllSexo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSexo" />
+  </wsdl:message>
+  <wsdl:message name="ISexoService_GetAllSexo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSexoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISexoService_GetAllSexo_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q6:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IEstadoCivilService_GetAllEstadoCivil_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEstadoCivil" />
+  </wsdl:message>
+  <wsdl:message name="IEstadoCivilService_GetAllEstadoCivil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEstadoCivilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEstadoCivilService_GetAllEstadoCivil_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q7:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IOrgaoExpedicaoService_GetAllOrgaoExpedicao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrgaoExpedicao" />
+  </wsdl:message>
+  <wsdl:message name="IOrgaoExpedicaoService_GetAllOrgaoExpedicao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrgaoExpedicaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrgaoExpedicaoService_GetAllOrgaoExpedicao_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q8:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEnderecoByCep_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnderecoByCep" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEnderecoByCep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnderecoByCepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEnderecoByCep_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q9:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_GetEndereco_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q10:FaultException" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_SaveEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_SaveEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnderecoService_SaveEndereco_FaultExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q11:FaultException" />
+  </wsdl:message>
+  <wsdl:portType name="IClienteService">
+    <wsdl:operation name="GetAllCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteService/GetAllCliente" message="tns:IClienteService_GetAllCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteService/GetAllClienteResponse" message="tns:IClienteService_GetAllCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClienteService/GetAllClienteFaultExceptionFault" name="FaultExceptionFault" message="tns:IClienteService_GetAllCliente_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteService/GetCliente" message="tns:IClienteService_GetCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteService/GetClienteResponse" message="tns:IClienteService_GetCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClienteService/GetClienteFaultExceptionFault" name="FaultExceptionFault" message="tns:IClienteService_GetCliente_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteService/SaveCliente" message="tns:IClienteService_SaveCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteService/SaveClienteResponse" message="tns:IClienteService_SaveCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClienteService/SaveClienteFaultExceptionFault" name="FaultExceptionFault" message="tns:IClienteService_SaveCliente_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteService/AtualizarCliente" message="tns:IClienteService_AtualizarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteService/AtualizarClienteResponse" message="tns:IClienteService_AtualizarCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClienteService/AtualizarClienteFaultExceptionFault" name="FaultExceptionFault" message="tns:IClienteService_AtualizarCliente_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteService/DeleteCliente" message="tns:IClienteService_DeleteCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteService/DeleteClienteResponse" message="tns:IClienteService_DeleteCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClienteService/DeleteClienteFaultExceptionFault" name="FaultExceptionFault" message="tns:IClienteService_DeleteCliente_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISexoService">
+    <wsdl:operation name="GetAllSexo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISexoService/GetAllSexo" message="tns:ISexoService_GetAllSexo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISexoService/GetAllSexoResponse" message="tns:ISexoService_GetAllSexo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISexoService/GetAllSexoFaultExceptionFault" name="FaultExceptionFault" message="tns:ISexoService_GetAllSexo_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IEstadoCivilService">
+    <wsdl:operation name="GetAllEstadoCivil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstadoCivilService/GetAllEstadoCivil" message="tns:IEstadoCivilService_GetAllEstadoCivil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstadoCivilService/GetAllEstadoCivilResponse" message="tns:IEstadoCivilService_GetAllEstadoCivil_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEstadoCivilService/GetAllEstadoCivilFaultExceptionFault" name="FaultExceptionFault" message="tns:IEstadoCivilService_GetAllEstadoCivil_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IOrgaoExpedicaoService">
+    <wsdl:operation name="GetAllOrgaoExpedicao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrgaoExpedicaoService/GetAllOrgaoExpedicao" message="tns:IOrgaoExpedicaoService_GetAllOrgaoExpedicao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrgaoExpedicaoService/GetAllOrgaoExpedicaoResponse" message="tns:IOrgaoExpedicaoService_GetAllOrgaoExpedicao_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IOrgaoExpedicaoService/GetAllOrgaoExpedicaoFaultExceptionFault" name="FaultExceptionFault" message="tns:IOrgaoExpedicaoService_GetAllOrgaoExpedicao_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IEnderecoService">
+    <wsdl:operation name="GetEnderecoByCep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnderecoService/GetEnderecoByCep" message="tns:IEnderecoService_GetEnderecoByCep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnderecoService/GetEnderecoByCepResponse" message="tns:IEnderecoService_GetEnderecoByCep_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEnderecoService/GetEnderecoByCepFaultExceptionFault" name="FaultExceptionFault" message="tns:IEnderecoService_GetEnderecoByCep_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnderecoService/GetEndereco" message="tns:IEnderecoService_GetEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnderecoService/GetEnderecoResponse" message="tns:IEnderecoService_GetEndereco_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEnderecoService/GetEnderecoFaultExceptionFault" name="FaultExceptionFault" message="tns:IEnderecoService_GetEndereco_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEnderecoService/SaveEndereco" message="tns:IEnderecoService_SaveEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEnderecoService/SaveEnderecoResponse" message="tns:IEnderecoService_SaveEndereco_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEnderecoService/SaveEnderecoFaultExceptionFault" name="FaultExceptionFault" message="tns:IEnderecoService_SaveEndereco_FaultExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IClienteService" type="tns:IClienteService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllCliente">
+      <soap:operation soapAction="http://tempuri.org/IClienteService/GetAllCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCliente">
+      <soap:operation soapAction="http://tempuri.org/IClienteService/GetCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCliente">
+      <soap:operation soapAction="http://tempuri.org/IClienteService/SaveCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <soap:operation soapAction="http://tempuri.org/IClienteService/AtualizarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <soap:operation soapAction="http://tempuri.org/IClienteService/DeleteCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ISexoService" type="tns:ISexoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllSexo">
+      <soap:operation soapAction="http://tempuri.org/ISexoService/GetAllSexo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IEstadoCivilService" type="tns:IEstadoCivilService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllEstadoCivil">
+      <soap:operation soapAction="http://tempuri.org/IEstadoCivilService/GetAllEstadoCivil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IOrgaoExpedicaoService" type="tns:IOrgaoExpedicaoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllOrgaoExpedicao">
+      <soap:operation soapAction="http://tempuri.org/IOrgaoExpedicaoService/GetAllOrgaoExpedicao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IEnderecoService" type="tns:IEnderecoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetEnderecoByCep">
+      <soap:operation soapAction="http://tempuri.org/IEnderecoService/GetEnderecoByCep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEndereco">
+      <soap:operation soapAction="http://tempuri.org/IEnderecoService/GetEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEndereco">
+      <soap:operation soapAction="http://tempuri.org/IEnderecoService/SaveEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultExceptionFault">
+        <soap:fault use="literal" name="FaultExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClienteService">
+    <wsdl:port name="BasicHttpBinding_IClienteService" binding="tns:BasicHttpBinding_IClienteService">
+      <soap:address location="http://localhost:61668/ClienteService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ISexoService" binding="tns:BasicHttpBinding_ISexoService">
+      <soap:address location="http://localhost:61668/ClienteService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IEstadoCivilService" binding="tns:BasicHttpBinding_IEstadoCivilService">
+      <soap:address location="http://localhost:61668/ClienteService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IOrgaoExpedicaoService" binding="tns:BasicHttpBinding_IOrgaoExpedicaoService">
+      <soap:address location="http://localhost:61668/ClienteService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IEnderecoService" binding="tns:BasicHttpBinding_IEnderecoService">
+      <soap:address location="http://localhost:61668/ClienteService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

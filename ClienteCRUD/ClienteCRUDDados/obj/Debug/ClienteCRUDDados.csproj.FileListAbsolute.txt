@@ -1,0 +1,16 @@
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\ClienteCRUDDados.dll.config
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\ClienteCRUDDados.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\ClienteCRUDDados.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\ClienteCRUDModel.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\EntityFramework.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\ClienteCRUDModel.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\EntityFramework.xml
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\obj\Debug\ClienteCRUDDados.csproj.AssemblyReference.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\obj\Debug\ClienteCRUDDados.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\obj\Debug\ClienteCRUDDados.csproj.CopyComplete
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\obj\Debug\ClienteCRUDDados.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\obj\Debug\ClienteCRUDDados.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\Ninject.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDados\bin\Debug\Ninject.xml

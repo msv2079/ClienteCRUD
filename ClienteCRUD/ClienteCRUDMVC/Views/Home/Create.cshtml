@@ -1,0 +1,132 @@
+﻿@model ClienteViewModel
+
+@{
+    var cliente = Model.Cliente;
+    var endereco = Model.Endereco;
+}
+
+<br />
+@if (ViewBag.Mensagem != null)
+{
+    <label class="@ViewBag.ClasseCSSMensagem">@ViewBag.Mensagem</label>
+}
+<section class="row">
+    <h5 class="text-primary">Cadastro</h5>
+</section>
+<hr />
+<form asp-action="Create">
+    <div class="row">
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@cliente.CPF" class="control-label"></label>
+                <input asp-for="@cliente.CPF" class="cpfmask form-control" />
+                <span asp-validation-for="@cliente.CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.Nome" class="control-label"></label>
+                <input asp-for="@cliente.Nome" class="form-control" />
+                <span asp-validation-for="@cliente.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.RG" class="control-label"></label>
+                <input asp-for="@cliente.RG" class="form-control" />
+                <span asp-validation-for="@cliente.RG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.DataExpedicao" class="control-label"></label>
+                <input asp-for="@cliente.DataExpedicao" class="datamask form-control" type="text" />
+                <span asp-validation-for="@cliente.DataExpedicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.OrgaoExpedicao" class="control-label"></label>
+                <select asp-for="@cliente.OrgaoExpedicaoId" class="form-control">
+                    @foreach (var item in ViewBag.OrgaoExpedicao)
+                    {
+                        <option value="@item.Id">@item.Descricao</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.UFExpedicao" class="control-label"></label>
+                <input asp-for="@cliente.UFExpedicao" class="form-control" />
+                <span asp-validation-for="@cliente.UFExpedicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.DataNascimento" class="control-label"></label>
+                <input asp-for="@cliente.DataNascimento" class="datamask form-control" type="text" />
+                <span asp-validation-for="@cliente.DataNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.Sexo" class="control-label"></label>
+                <select asp-for="@cliente.SexoId" class="form-control">
+                    @foreach (var item in ViewBag.Sexo)
+                    {
+                        <option value="@item.Id">@item.Descricao</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="@cliente.EstadoCivil" class="control-label"></label>
+                <select asp-for="@cliente.EstadoCivilId" class="form-control">
+                    @foreach (var item in ViewBag.EstadoCivil)
+                    {
+                        <option value="@item.Id">@item.Descricao</option>
+                    }
+                </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-2">
+            <input type="hidden" asp-for="@endereco.Id" />
+            <div class="form-group">
+                <label asp-for="@endereco.CEP" class="control-label"></label>
+                <input asp-for="@endereco.CEP" type="text" class="cepmask form-control" />
+                <span asp-validation-for="@endereco.CEP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.Rua" class="control-label"></label>
+                <input asp-for="@endereco.Rua" class="form-control" />
+                <span asp-validation-for="@endereco.Rua" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.Numero" class="control-label"></label>
+                <input asp-for="@endereco.Numero" class="form-control" />
+                <span asp-validation-for="@endereco.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.Complemento" class="control-label"></label>
+                <input asp-for="@endereco.Complemento" class="form-control" />
+                <span asp-validation-for="@endereco.Complemento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.Bairro" class="control-label"></label>
+                <input asp-for="@endereco.Bairro" class="form-control" />
+                <span asp-validation-for="@endereco.Bairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.Cidade" class="control-label"></label>
+                <input asp-for="@endereco.Cidade" class="form-control" />
+                <span asp-validation-for="@endereco.Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@endereco.UF" class="control-label"></label>
+                <input asp-for="@endereco.UF" class="form-control" />
+                <span asp-validation-for="@endereco.UF" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</form>
+<br />
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

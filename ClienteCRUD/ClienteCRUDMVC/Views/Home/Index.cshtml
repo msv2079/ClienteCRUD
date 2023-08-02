@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ClienteCRUDModel.ClienteModel>
+
+<br />
+@if (ViewBag.Mensagem != null)
+{
+    <label class="@ViewBag.ClasseCSSMensagem">@ViewBag.Mensagem</label>
+}
+<section class="row">
+    <h5 class="text-primary">Clientes</h5>
+    <a class="btn btn-primary" asp-action="Create">Novo</a>
+</section>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                Ação
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataNascimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <td class="text-center">
+                @if (ViewBag.Paginacao != null)
+                {
+                    foreach (var dicPagina in ViewBag.Paginacao)
+                    {
+                        <a class="@dicPagina.Value" asp-route-pagina="@dicPagina.Key">@dicPagina.Key</a>
+                    }
+                }
+            </td>
+        </tr>
+    </tbody>
+</table>
+

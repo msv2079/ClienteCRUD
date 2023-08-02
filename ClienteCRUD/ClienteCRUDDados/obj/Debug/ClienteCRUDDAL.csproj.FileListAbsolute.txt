@@ -1,0 +1,14 @@
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\ClienteCRUDDAL.dll.config
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\ClienteCRUDDAL.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\ClienteCRUDDAL.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\EntityFramework.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\EntityFramework.xml
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\obj\Debug\ClienteCRUDDAL.csproj.AssemblyReference.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\obj\Debug\ClienteCRUDDAL.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\obj\Debug\ClienteCRUDDAL.csproj.CopyComplete
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\obj\Debug\ClienteCRUDDAL.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\obj\Debug\ClienteCRUDDAL.pdb
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\ClienteCRUDModel.dll
+C:\Users\Murilo\source\repos\Clientes\ClienteCRUD\ClienteCRUDDAL\bin\Debug\ClienteCRUDModel.pdb

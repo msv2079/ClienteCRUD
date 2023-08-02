@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ClienteCRUDModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ClienteCRUDModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfClienteModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClienteModel" nillable="true" type="tns:ClienteModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClienteModel" nillable="true" type="tns:ArrayOfClienteModel" />
+  <xs:complexType name="ClienteModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataExpedicao" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataNascimento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="tns:EnderecoModel" />
+      <xs:element minOccurs="0" name="EnderecoId" type="xs:int" />
+      <xs:element minOccurs="0" name="EstadoCivil" nillable="true" type="tns:EstadoCivilModel" />
+      <xs:element minOccurs="0" name="EstadoCivilId" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrgaoExpedicao" nillable="true" type="tns:OrgaoExpedicaoModel" />
+      <xs:element minOccurs="0" name="OrgaoExpedicaoId" type="xs:int" />
+      <xs:element minOccurs="0" name="RG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="tns:SexoModel" />
+      <xs:element minOccurs="0" name="SexoId" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalClientes" type="xs:int" />
+      <xs:element minOccurs="0" name="UFExpedicao" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClienteModel" nillable="true" type="tns:ClienteModel" />
+  <xs:complexType name="EnderecoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rua" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UF" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnderecoModel" nillable="true" type="tns:EnderecoModel" />
+  <xs:complexType name="EstadoCivilModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EstadoCivilModel" nillable="true" type="tns:EstadoCivilModel" />
+  <xs:complexType name="OrgaoExpedicaoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrgaoExpedicaoModel" nillable="true" type="tns:OrgaoExpedicaoModel" />
+  <xs:complexType name="SexoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SexoModel" nillable="true" type="tns:SexoModel" />
+  <xs:complexType name="ArrayOfSexoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SexoModel" nillable="true" type="tns:SexoModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSexoModel" nillable="true" type="tns:ArrayOfSexoModel" />
+  <xs:complexType name="ArrayOfEstadoCivilModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EstadoCivilModel" nillable="true" type="tns:EstadoCivilModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEstadoCivilModel" nillable="true" type="tns:ArrayOfEstadoCivilModel" />
+  <xs:complexType name="ArrayOfOrgaoExpedicaoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrgaoExpedicaoModel" nillable="true" type="tns:OrgaoExpedicaoModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrgaoExpedicaoModel" nillable="true" type="tns:ArrayOfOrgaoExpedicaoModel" />
+</xs:schema>

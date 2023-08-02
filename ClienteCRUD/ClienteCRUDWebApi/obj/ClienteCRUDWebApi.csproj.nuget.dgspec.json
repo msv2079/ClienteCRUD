@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDWebApi\\ClienteCRUDWebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDDados\\ClienteCRUDDados.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDDados\\ClienteCRUDDados.csproj",
+        "projectName": "ClienteCRUDDados",
+        "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDDados\\ClienteCRUDDados.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj": {
+                "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDLogica\\ClienteCRUDLogica.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDLogica\\ClienteCRUDLogica.csproj",
+        "projectName": "ClienteCRUDLogica",
+        "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDLogica\\ClienteCRUDLogica.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDDados\\ClienteCRUDDados.csproj": {
+                "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDDados\\ClienteCRUDDados.csproj"
+              },
+              "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj": {
+                "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj",
+        "projectName": "ClienteCRUDModel",
+        "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDWebApi\\ClienteCRUDWebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDWebApi\\ClienteCRUDWebApi.csproj",
+        "projectName": "ClienteCRUDWebApi",
+        "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDWebApi\\ClienteCRUDWebApi.csproj",
+        "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDWebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDLogica\\ClienteCRUDLogica.csproj": {
+                "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDLogica\\ClienteCRUDLogica.csproj"
+              },
+              "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj": {
+                "projectPath": "C:\\Users\\Murilo\\source\\repos\\Clientes\\ClienteCRUD\\ClienteCRUDModel\\ClienteCRUDModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
